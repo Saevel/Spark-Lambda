@@ -1,0 +1,17 @@
+group 'prv.zielony.spark.lambda'
+
+version '1.0-SNAPSHOT'
+
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.8'
+    compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.1.0'
+    compile group: 'org.typelevel', name: 'cats-core_2.11', version: '0.9.0'
+    compile group: 'com.typesafe.akka', name: 'akka-http_2.11', version: '10.0.3'
+}
